@@ -21,6 +21,8 @@ var wordLists = {
 	lvl5 : [],
 	lvl6 : [],
 	lvl7 : [],
+	lvl8 : [],
+	lvl9 : [],
 };
 
 var alphabet = "abcdefghijklmnopqrstuvwxyz',.-";

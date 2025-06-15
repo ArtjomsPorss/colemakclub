@@ -1214,7 +1214,10 @@ for(button of buttons) {
 			lev = 7;
 		}else if(b.innerHTML == 'Full Sentences'){
 			lev = 8;
+		}else if(b.innerHTML == 'Non Letter') {
+			lev = 9;
 		}
+
 		switchLevel(lev);
 	});
 }
