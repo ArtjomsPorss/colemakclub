@@ -1744,7 +1744,6 @@ function createTestSets(){
 	for(let i = 0; i < objKeys.length; i++) {
 		let requiredLetters;
 		
-		
 		// if 'all words' on a custom layout, don't add letters from the dictionary, because 
 		// level 7 contains the whole alphabet, and the user might not have asigned every letter to
 		// a key. Instead, this level should be the same as the previous, just with every letter required
@@ -1756,6 +1755,12 @@ function createTestSets(){
 		}
 
 		wordLists[objKeys[i]] = [];
+
+		if (i === 8 && currentLayout === 'engram') {
+			wordLists[objKeys[i]] = generateNonLetterWordList(requiredLetters);
+			continue;
+		}
+
 		//console.log('level ' +(i+1) + ": " + wordLists[objKeys[i]]);
 		wordLists[objKeys[i]] = generateList(includedLetters, requiredLetters);
 		// if(i == 6) console.log('level ' +(i+1) + ": " + wordLists[objKeys[i]]);

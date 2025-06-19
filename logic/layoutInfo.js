@@ -9,7 +9,7 @@ levelDictionaries = {
     'lvl5': 'gxjk',
     'lvl6': 'rmfp',
     'lvl7': alphabet,
-    'lvl9': '!"£$%^&*(){}[]=-_+@~#;:><,.|\\/\'',
+    'lvl9': '!"£$%^&*(){}[]=-_+@~#;:><,.|\\/\'1234567890',
   },
   azerty: {
     'lvl1': 'qsdfjklm',

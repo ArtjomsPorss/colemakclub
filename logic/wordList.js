@@ -84,3 +84,23 @@ function generateList(lettersToInclude, requiredLetters) {
 
 	return wordList;
 }
+
+// generates a list of words of non-letter characters
+function generateNonLetterWordList(requiredLetters, maxWords=50, minLength=4, maxLength=8) {
+	let wordList = [];
+
+	for (let i = 0; i < maxWords; i++) {
+		let word = '';
+		let wordLength = minLength + Math.floor(Math.random() * (maxLength - minLength + 1));
+		// console.log('word length:', wordLength);
+		for (let j = 0; j < wordLength; j++) {
+			let r = Math.floor(Math.random() * (requiredLetters.length));
+			// console.log('random letter at position:', r);
+			word = word.concat("", requiredLetters[r]);
+		}
+		wordList.push(word);
+		
+	}
+	return wordList;
+}
+
